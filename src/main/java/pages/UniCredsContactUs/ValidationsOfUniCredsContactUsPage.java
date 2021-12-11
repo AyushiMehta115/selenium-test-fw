@@ -98,36 +98,55 @@ public class ValidationsOfUniCredsContactUsPage extends Shell {
      */
     public void validate_Email_Address(String emailAddress) {
         try {
-
+            int count = 0;
             for (int i = 0; i < emailAddress.length(); i++) {
 
                 //-------Increment i if current char is equal to given character
                 if (emailAddress.charAt(i) == '@') {
-                    log.info("Email address contains @ characters at Index value: " + i);
-
-                    //-------If Email address contains more than one @ character
-                    if (emailAddress.charAt(i) > 1) {
-                        log.info("Email address contains more than one @ character which is invalid");
-                    } else if (emailAddress.charAt(i) == 1) {
-                        log.info("Email address contains only one @ character which is as expected");
-                    }
-
-                    //-------If Email address contains . character
-                } else if (emailAddress.charAt(i) == '.') {
-
-                    //-------If Email address contains more than one . character
-                    if (emailAddress.charAt(i) == emailAddress.charAt(i + 1)) {
-                        log.info("Email address contains consecutive .(dot) characters which is invalid");
-                        break;
-                    } else {
-                        log.info("Email address contains .(dot) characters at Index value: " + i);
-                    }
+                    count++;
                 }
+            }
+            //-------If Email address contains more than one @ character
+            if (count > 1) {
+                log.info("Email address contains more than one @ character which is invalid. Count: " + count);
+            } else if (count == 1) {
+                log.info("Email address contains only one @ character which is as expected");
+            } else {
+                log.info("Email address does not contain @ character which is invalid");
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+    }
+
+    public void validate_Email_Address_consecutivedot(String emailAddress) {
+        try {
+            int count = 0;
+
+            for (int i = 0; i < emailAddress.length(); i++) {
+                //-------If Email address contains . character
+                if (emailAddress.charAt(i) == '.') {
+                    count++;
+                    //-------If Email address contains more than one . character
+                    if (emailAddress.charAt(i) == emailAddress.charAt(i + 1)) {
+                        log.info("Email address contains consecutive .(dot) characters which is invalid");
+                        count++;
+                        break;
+                    }
+                }
+            }
+                if (count > 1) {
+                    log.info("Email address contains more than .(dot) characters. Count: "+count);
+                } else if (count == 1) {
+                    log.info("Email Address contain one . (dot) character");
+                } else {
+                    log.info("Email address does not contain . (dot) character which is invalid");
+                }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public void validate_Email_Address_trailing_dot(String emailAddress) {
@@ -149,12 +168,13 @@ public class ValidationsOfUniCredsContactUsPage extends Shell {
             //-------The last portion of the domain must be at least two characters, for example: .com, .org, .cc
             if (emailAddress.length() >= 2) {
                 if (emailAddress.endsWith(".com") || emailAddress.endsWith(".org") || emailAddress.endsWith(".cc")) {
-                    log.info("The last portion of the email domain contains two characters which is valid and as Expected");
+                    log.info("The last portion of the email domain contains atleast two characters which is valid and as Expected");
+                    log.info("Email domain is valid and as Expected");
                 } else {
-                    log.info("The last portion of the email domain does not contain two characters which is invalid data");
+                    log.info("The last portion of the email domain does not end with expected domain names hence invalid data");
                 }
             } else {
-                log.info("The last portion of the email domain does not end with expected domain names which is invalid data");
+                log.info("The email address does not contain two characters hence invalid data");
             }
 
         } catch (Exception e) {
@@ -269,6 +289,7 @@ public class ValidationsOfUniCredsContactUsPage extends Shell {
                 log.info("Message is valid and acceptable as expected");
             } else {
                 log.info("Message is not acceptable due to number of characters>500");
+                log.info("Message WebElement trims extra length and accepts the input value");
             }
         } catch (Exception e) {
             e.printStackTrace();

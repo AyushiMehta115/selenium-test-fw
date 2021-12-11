@@ -10,7 +10,6 @@ Feature: Validate UniCreds Contact-Us Page
     Then User performs Mandatory field validation
 
 
-  @QAContactTest
   Scenario Outline: Validate Full Name field for length, alphabets, alphanumeric, special characters on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
@@ -47,8 +46,9 @@ Feature: Validate UniCreds Contact-Us Page
     Examples:
       | fullName     | emailAddress                                         | countryCode | phone      | message                           | successMessage             |
       | Ayushi Mehta | .firstname+lastname+middlename@subdomain.example.com | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
-      | Ayushi Mehta | example..first@mailtrap.io.                          | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
+      | Ayushi Mehta | example..first@mail@trap.io.                         | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
       | Ayushi Mehta | 0aYu-shi.Mehta@0gm-ail.com                           | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
+      | Ayushi Mehta | test                                                 | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
 
   @QAContactTest
   Scenario Outline: Validate Country Code field alphabets, alphanumeric, special characters on UniCreds Contact-Us page

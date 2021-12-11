@@ -148,9 +148,10 @@ public class StepsHome {
     @Then("User validates Email Address {} field")
     public void validate_Email_Address_Field(String EmailAddress) {
         validationsOfUniCredsContactUsPage.validate_Email_Address(EmailAddress);
+        validationsOfUniCredsContactUsPage.validate_Email_Address_consecutivedot(EmailAddress);
         validationsOfUniCredsContactUsPage.validate_Email_Address_trailing_dot(EmailAddress);
         validationsOfUniCredsContactUsPage.validate_Email_Address_DomainNames(EmailAddress);
-        validationsOfUniCredsContactUsPage.validate_Email_Address_format(EmailAddress);
+        //validationsOfUniCredsContactUsPage.validate_Email_Address_format(EmailAddress);
         Shell.utillClass.takeScreenshots();
     }
 

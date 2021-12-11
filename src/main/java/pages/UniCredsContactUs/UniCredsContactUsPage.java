@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import testDriver.Shell;
 
+import java.util.concurrent.TimeUnit;
+
 public class UniCredsContactUsPage extends Shell {
     //
     public void userValidatePresence() {
@@ -102,9 +104,7 @@ public class UniCredsContactUsPage extends Shell {
     public boolean validateSuccessMessage(String SuccessMessage) {
         boolean strfail = false;
         try {
-            WebDriverWait wait = new WebDriverWait(driver, 100);
-
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("formMessage")));
+            driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
             //System.out.println(driver.findElement(By.id("formMessage")).getText());
 
@@ -113,7 +113,7 @@ public class UniCredsContactUsPage extends Shell {
                 log.info("Success Message appears: " + SuccessMessage);
 
             } else {
-                log.info("Success Message does not appear: " + SuccessMessage);
+                log.info("Success Message does not appear ");
                 log.info("Fields are mandatory and supplied with invalid values as expected");
             }
             log.info("Testing is Successfully Completed and Passed");
