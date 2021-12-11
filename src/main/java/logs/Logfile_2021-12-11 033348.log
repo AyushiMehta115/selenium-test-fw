@@ -1,0 +1,45 @@
+2021-12-11 15:33:49,063 - MyFW -INFO - Initiating Drivers
+2021-12-11 15:33:49,094 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-11 15:33:51,256 - MyFW -INFO - Chrome Browser Initialized Successfully
+2021-12-11 15:34:18,965 - MyFW -INFO - notification popup is closed
+2021-12-11 15:34:19,024 - MyFW -INFO - Fill in your Information form is displayed
+2021-12-11 15:34:19,640 - MyFW -INFO - Fill in your Information popup is closed
+2021-12-11 15:34:21,972 - MyFW -INFO - Numeric characters: 
+2021-12-11 15:34:21,973 - MyFW -INFO - Full name does not contain Numeric characters: Ayushi Mehta
+2021-12-11 15:34:21,974 - MyFW -INFO - Test Case for Numeric chars validation in Name field is Passed
+2021-12-11 15:34:21,976 - MyFW -INFO - Name field does not contain special characters: Ayushi Mehta
+2021-12-11 15:34:21,976 - MyFW -INFO - Full name variable length has value > 0 and < 100
+2021-12-11 15:34:22,264 - MyFW -INFO - Success Message appears: Message sent successfully!
+2021-12-11 15:34:22,265 - MyFW -INFO - Testing is Successfully Completed and Passed
+2021-12-11 15:34:26,611 - MyFW -INFO - Closing browser
+2021-12-11 15:34:26,642 - MyFW -INFO - Initiating Drivers
+2021-12-11 15:34:26,673 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-11 15:34:28,396 - MyFW -INFO - Chrome Browser Initialized Successfully
+2021-12-11 15:34:55,537 - MyFW -INFO - notification popup is closed
+2021-12-11 15:34:55,585 - MyFW -INFO - Fill in your Information form is displayed
+2021-12-11 15:34:55,991 - MyFW -INFO - Fill in your Information popup is closed
+2021-12-11 15:34:58,528 - MyFW -INFO - Numeric characters: 234341
+2021-12-11 15:34:58,529 - MyFW -INFO - Full Name contains Numeric characters: erre23434&*&&! 1_-+
+2021-12-11 15:34:58,530 - MyFW -INFO - Test Case for Numeric chars validation in Name field is Passed
+2021-12-11 15:34:58,530 - MyFW -INFO - Name field contains special characters: erre23434&*&&! 1_-+
+2021-12-11 15:34:58,531 - MyFW -INFO - Full name variable length has value > 0 and < 100
+2021-12-11 15:34:58,799 - MyFW -INFO - Success Message appears: Message sent successfully!
+2021-12-11 15:34:58,800 - MyFW -INFO - Testing is Successfully Completed and Passed
+2021-12-11 15:34:59,259 - MyFW -INFO - Closing browser
+2021-12-11 15:34:59,306 - MyFW -INFO - Initiating Drivers
+2021-12-11 15:34:59,368 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-11 15:35:01,143 - MyFW -INFO - Chrome Browser Initialized Successfully
+2021-12-11 15:35:28,593 - MyFW -INFO - notification popup is closed
+2021-12-11 15:35:28,654 - MyFW -INFO - Fill in your Information form is displayed
+2021-12-11 15:35:29,124 - MyFW -INFO - Fill in your Information popup is closed
+2021-12-11 15:35:31,597 - MyFW -INFO - Numeric characters: 
+2021-12-11 15:35:31,598 - MyFW -INFO - Full name does not contain Numeric characters: Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr.
+2021-12-11 15:35:31,598 - MyFW -INFO - Test Case for Numeric chars validation in Name field is Passed
+2021-12-11 15:35:31,599 - MyFW -INFO - Name field does not contain special characters: Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr.
+2021-12-11 15:35:31,599 - MyFW -INFO - Full name variable length has value > 0 and < 100
+2021-12-11 15:35:31,887 - MyFW -INFO - Success Message appears: Message sent successfully!
+2021-12-11 15:35:31,888 - MyFW -INFO - Testing is Successfully Completed and Passed
+2021-12-11 15:35:36,235 - MyFW -INFO - Closing browser
+2021-12-11 15:35:36,266 - MyFW -INFO - Initiating Drivers
+2021-12-11 15:35:36,281 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-11 15:35:37,903 - MyFW -INFO - Chrome Browser Initialized Successfully
