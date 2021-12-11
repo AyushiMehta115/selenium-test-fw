@@ -12,7 +12,7 @@ import utill.TestCompletion;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/features",
-        tags = "@QAContactTest",
+        tags = "@QATest",
         glue = {"stepdefs"},
         plugin = {"pretty", "html:target/cucumber-reports.html",
                 "json:target/cucumber.json"})

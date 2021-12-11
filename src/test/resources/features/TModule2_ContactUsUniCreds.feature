@@ -1,6 +1,6 @@
 Feature: Validate UniCreds Contact-Us Page
 
-
+  @QATest
   Scenario: Validate Presence of expected fields and Mandatory fields on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
@@ -9,7 +9,7 @@ Feature: Validate UniCreds Contact-Us Page
     And User validates presence of Full Name, Email Address, Country Code, Phone and Message fields
     Then User performs Mandatory field validation
 
-
+  @QATest
   Scenario Outline: Validate Full Name field for length, alphabets, alphanumeric, special characters on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
@@ -29,7 +29,7 @@ Feature: Validate UniCreds Contact-Us Page
       | erre23434&*&&! 1_-+                                   | ayushi.mehta115@gmail.com | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
       | Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr. | ayushi.mehta115@gmail.com | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
 
-  @QAContactTest
+  @QATest
   Scenario Outline: Validate Email Address field for length, alphabets, alphanumeric, special characters on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
@@ -50,7 +50,7 @@ Feature: Validate UniCreds Contact-Us Page
       | Ayushi Mehta | 0aYu-shi.Mehta@0gm-ail.com                           | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
       | Ayushi Mehta | test                                                 | India (+91) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
 
-  @QAContactTest
+  @QATest
   Scenario Outline: Validate Country Code field alphabets, alphanumeric, special characters on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
@@ -70,7 +70,7 @@ Feature: Validate UniCreds Contact-Us Page
       | Ayushi Mehta | ayushi.mehta115@gmail.com | Virgin Islands - US (+1340)                             | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
       | Ayushi Mehta | ayushi.mehta115@gmail.com | testing left Turks & Caicos Islands (+1649342532443234) | 0101010101 | Hi, I am running Automation Tests | Message sent successfully! |
 
-  @QAContactTest
+  @QATest
   Scenario Outline: Validate Phone field for length, alphabets, alphanumeric, special characters on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
@@ -90,7 +90,7 @@ Feature: Validate UniCreds Contact-Us Page
       | Ayushi Mehta | ayushi.mehta115@gmail.com | India (+91) | 01@10Ab01-21 | Hi, I am running Automation Tests | Message sent successfully! |
       | Ayushi Mehta | ayushi.mehta115@gmail.com | India (+91) | 01101021     | Hi, I am running Automation Tests | Message sent successfully! |
 
-  @QAContactTest
+  @QATest
   Scenario Outline: Validate Message field for length, alphabets, alphanumeric, special characters on UniCreds Contact-Us page
     Given User can launch browser
     When User opens UniCreds Contact-Us URL
