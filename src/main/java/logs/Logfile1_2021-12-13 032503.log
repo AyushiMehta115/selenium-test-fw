@@ -1,0 +1,27 @@
+2021-12-13 15:25:04,676 [main] INFO MyFW - Initiating Drivers
+2021-12-13 15:25:04,720 [main] INFO MyFW - Killed all the Chrome browser process
+2021-12-13 15:25:07,615 [main] INFO MyFW - Chrome Browser Initialized Successfully
+2021-12-13 15:25:40,063 [main] INFO MyFW - notification popup is closed
+2021-12-13 15:25:40,128 [main] INFO MyFW - Fill in your Information form is displayed
+2021-12-13 15:25:40,816 [main] INFO MyFW - Enter Name, Phone Number, Email Address
+2021-12-13 15:25:41,881 [main] INFO MyFW - enters loan amount and country of study
+2021-12-13 15:25:44,128 [main] INFO MyFW - Test Case for Name Validation is completed
+2021-12-13 15:25:44,199 [main] INFO MyFW - Test Case for Phone Number Validation is completed
+2021-12-13 15:25:44,267 [main] INFO MyFW - Test Case for Email Validation is completed
+2021-12-13 15:25:44,705 [main] INFO MyFW - Correct values are entered in all fields on 'Fill in your information' page
+2021-12-13 15:25:45,858 [main] INFO MyFW - Closing browser
+2021-12-13 15:25:45,904 [main] INFO MyFW - Initiating Drivers
+2021-12-13 15:25:45,931 [main] INFO MyFW - Killed all the Chrome browser process
+2021-12-13 15:25:47,768 [main] INFO MyFW - Chrome Browser Initialized Successfully
+2021-12-13 15:26:16,635 [main] INFO MyFW - notification popup is closed
+2021-12-13 15:26:16,715 [main] INFO MyFW - Fill in your Information form is displayed
+2021-12-13 15:26:17,196 [main] INFO MyFW - Enter Name, Phone Number, Email Address
+2021-12-13 15:26:18,168 [main] INFO MyFW - enters loan amount and country of study
+2021-12-13 15:26:20,519 [main] INFO MyFW - Test Case for Name Validation is completed
+2021-12-13 15:26:20,584 [main] INFO MyFW - Test Case for Phone Number Validation is completed
+2021-12-13 15:26:20,655 [main] INFO MyFW - Test Case for Email Validation is completed
+2021-12-13 15:27:11,024 [main] INFO MyFW - Incorrect values are entered on 'Fill in your information' page
+2021-12-13 15:27:12,177 [main] INFO MyFW - Closing browser
+2021-12-13 15:27:12,219 [main] INFO MyFW - Initiating Drivers
+2021-12-13 15:27:12,258 [main] INFO MyFW - Killed all the Chrome browser process
+2021-12-13 15:27:14,041 [main] INFO MyFW - Chrome Browser Initialized Successfully

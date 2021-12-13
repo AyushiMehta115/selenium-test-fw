@@ -206,12 +206,24 @@ public class UniCredsContactUsFillInYourInfoPage extends Shell {
         }
     }
 
+    public void userValidatesAppearanceOfVerifyOTPScreen(){
+        try {
+            if(!driver.findElements(By.xpath("/html/body/div[4]/div/div/div[2]/div/div/div/div/div[2]/div/div[2]/h2")).isEmpty()){
+                log.info("Correct values are entered in all fields on 'Fill in your information' page");
+            } else{
+                log.info("Incorrect values are entered on 'Fill in your information' page");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public void userClosesFillinyourInformationform() {
 
         if (driver.findElement(By.xpath("/html/body/div[4]/div/div/div[2]/div/div/div/div/div[2]/div/div[1]/div/h3")).isDisplayed()) {
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             driver.findElement(By.xpath("/html/body/div[4]/div/div/div[1]/button")).click();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
             log.info("Fill in your Information popup is closed");
         } else {
             log.info("Fill in your Information popup did not appear");

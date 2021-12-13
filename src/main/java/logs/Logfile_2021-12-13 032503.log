@@ -1,0 +1,27 @@
+2021-12-13 15:25:04,676 - MyFW -INFO - Initiating Drivers
+2021-12-13 15:25:04,720 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-13 15:25:07,615 - MyFW -INFO - Chrome Browser Initialized Successfully
+2021-12-13 15:25:40,063 - MyFW -INFO - notification popup is closed
+2021-12-13 15:25:40,128 - MyFW -INFO - Fill in your Information form is displayed
+2021-12-13 15:25:40,816 - MyFW -INFO - Enter Name, Phone Number, Email Address
+2021-12-13 15:25:41,881 - MyFW -INFO - enters loan amount and country of study
+2021-12-13 15:25:44,128 - MyFW -INFO - Test Case for Name Validation is completed
+2021-12-13 15:25:44,199 - MyFW -INFO - Test Case for Phone Number Validation is completed
+2021-12-13 15:25:44,267 - MyFW -INFO - Test Case for Email Validation is completed
+2021-12-13 15:25:44,705 - MyFW -INFO - Correct values are entered in all fields on 'Fill in your information' page
+2021-12-13 15:25:45,858 - MyFW -INFO - Closing browser
+2021-12-13 15:25:45,904 - MyFW -INFO - Initiating Drivers
+2021-12-13 15:25:45,931 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-13 15:25:47,768 - MyFW -INFO - Chrome Browser Initialized Successfully
+2021-12-13 15:26:16,635 - MyFW -INFO - notification popup is closed
+2021-12-13 15:26:16,715 - MyFW -INFO - Fill in your Information form is displayed
+2021-12-13 15:26:17,196 - MyFW -INFO - Enter Name, Phone Number, Email Address
+2021-12-13 15:26:18,168 - MyFW -INFO - enters loan amount and country of study
+2021-12-13 15:26:20,519 - MyFW -INFO - Test Case for Name Validation is completed
+2021-12-13 15:26:20,584 - MyFW -INFO - Test Case for Phone Number Validation is completed
+2021-12-13 15:26:20,655 - MyFW -INFO - Test Case for Email Validation is completed
+2021-12-13 15:27:11,024 - MyFW -INFO - Incorrect values are entered on 'Fill in your information' page
+2021-12-13 15:27:12,177 - MyFW -INFO - Closing browser
+2021-12-13 15:27:12,219 - MyFW -INFO - Initiating Drivers
+2021-12-13 15:27:12,258 - MyFW -INFO - Killed all the Chrome browser process
+2021-12-13 15:27:14,041 - MyFW -INFO - Chrome Browser Initialized Successfully

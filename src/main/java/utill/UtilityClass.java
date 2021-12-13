@@ -1,6 +1,8 @@
 package utill;
 
+import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import testDriver.Shell;
@@ -71,14 +73,32 @@ public class UtilityClass extends Shell {
         }
     }
 
-    public void takeScreenshots() {
+    public static void captureScreenshotToScenario(Scenario scenarioToAttach, byte[] imageBytesToAttach) {
+        if (ArrayUtils.isNotEmpty(imageBytesToAttach)) {
+            attachBytesToScenarioAsImage(scenarioToAttach, imageBytesToAttach);
+        }
+    }
+
+    private static void attachBytesToScenarioAsImage(Scenario scenarioToAttach, byte[] imageBytesToAttach) {
+        scenarioToAttach.attach(imageBytesToAttach, "image/png", "screenshot");
+    }
+
+    public static byte[] captureScreenshotOfBrowser() {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    }
+
+    public File takeScreenshots() {
+        File screenshotFile = null;
         try {
             String ssName = "Screenshot_" + dateFormat.format(new Date()) + ".jpg";
             String ssPath = ssFolderPath + ssName;
-            File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(ssPath));
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return screenshotFile;
     }
+
+
 }
