@@ -1,1 +1,1 @@
-# unicreds-selenium-test-fw
+# selenium-test-automation-framework
